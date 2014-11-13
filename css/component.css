@@ -268,24 +268,6 @@ html, body, .container, .scroller {
 	box-shadow: inset 0 -1px rgba(255,255,255,1), inset 0 -2px rgba(255,255,255,1);
 } /* seems like Chrome 34.0.1847.131 needs the second shadow otherwise the transition breaks */
 
-.mp-back {
-	outline: none;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 300;
-	display: block;
-	padding: 1.25em 1em 2em 3em;
-	position: absolute;
-	top: 0;
-	right: 0;
-	/*left: 0;*/
-	box-shadow: inset 0 1px rgba(0,0,0,0.1);
-	-webkit-transition: background 0.3s;
-	-moz-transition: background 0.3s;
-	transition: background 0.3s;
-}
-
 .mp-back::after {
 	font-family: 'linecons';
 	position: absolute;
@@ -293,18 +275,6 @@ html, body, .container, .scroller {
 	right: 10px;
 	font-size: 1em;
 	color: white;
-}
-
-.mp-back:hover {
-	box-shadow: none !important;
-	background-color: transparent !important;
-}
-
-.mp-menu .mp-level.mp-level-overlay > .mp-back,
-.mp-menu .mp-level.mp-level-overlay > .mp-back::after {
-	background: transparent;
-	box-shadow: none;
-	color: transparent;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
